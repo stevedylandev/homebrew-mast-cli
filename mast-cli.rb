@@ -5,21 +5,21 @@
 class MastCli < Formula
   desc "A simple TUI for sending casts"
   homepage "https://github.com/stevedylandev/mast-cli"
-  version "0.5.2"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/stevedylandev/mast-cli/releases/download/v0.5.2/mast-cli_Darwin_x86_64.tar.gz"
-      sha256 "ccc8749240d469b30229116213367bc6724ccfe4ac3da8527df559871128dbd0"
+      url "https://github.com/stevedylandev/mast-cli/releases/download/v0.6.0/mast-cli_Darwin_x86_64.tar.gz"
+      sha256 "8a078c2ad85f7f8ed4fa4aaee55469bb17dd5227b9f6085370ea545eb6ec81b8"
 
       def install
         bin.install "mast"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/stevedylandev/mast-cli/releases/download/v0.5.2/mast-cli_Darwin_arm64.tar.gz"
-      sha256 "1dacde832fc98069b77aa57754f0af42c705764dcb48a5e584fe4b55fe313b01"
+      url "https://github.com/stevedylandev/mast-cli/releases/download/v0.6.0/mast-cli_Darwin_arm64.tar.gz"
+      sha256 "f04e5d6fd8d30f6454767c631dc70cca26deb557b407178c37495f06539ef969"
 
       def install
         bin.install "mast"
@@ -29,22 +29,22 @@ class MastCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/stevedylandev/mast-cli/releases/download/v0.5.2/mast-cli_Linux_x86_64.tar.gz"
-      sha256 "7499925879f694984049c60043a5b85a5e441368d635eda9ee0ffd28ec1b4d69"
+      url "https://github.com/stevedylandev/mast-cli/releases/download/v0.6.0/mast-cli_Linux_x86_64.tar.gz"
+      sha256 "12d6c946609fb16bfbe7caec15185bc8112ad975bedede5adaea1f9a15e72861"
       def install
         bin.install "mast"
       end
     end
     if Hardware::CPU.arm? and !Hardware::CPU.is_64_bit?
-      url "https://github.com/stevedylandev/mast-cli/releases/download/v0.5.2/mast-cli_Linux_armv6.tar.gz"
-      sha256 "0e4422c41021ed21c2f5cdf5d436b64046aa2979bd654adbbc08092b9a04ab56"
+      url "https://github.com/stevedylandev/mast-cli/releases/download/v0.6.0/mast-cli_Linux_armv6.tar.gz"
+      sha256 "04da622975d7182e80c24f47c6b5b32e1105ddcf7549e8911ad1acdbbcb4566b"
       def install
         bin.install "mast"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/stevedylandev/mast-cli/releases/download/v0.5.2/mast-cli_Linux_arm64.tar.gz"
-      sha256 "b32211a31e055a5c7c35c9ca5815883cff11c9ff978844eeb2b3e9522dd476e7"
+      url "https://github.com/stevedylandev/mast-cli/releases/download/v0.6.0/mast-cli_Linux_arm64.tar.gz"
+      sha256 "678d1814a83255f81cf04740700ed8b73f2a77a39f12bbc63ed1d1a684fac151"
       def install
         bin.install "mast"
       end
